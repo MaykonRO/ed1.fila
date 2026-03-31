@@ -57,13 +57,14 @@ public class Main {
                     write(filaP.toString());
                     break;
                 case 3:
-                    if (!fila.isEmpty()) {
+                    if (!filaP.isEmpty()) {
                         if (aux > 0) {
-                            write("o senha comum é: " + fila.poll());
-                            write(fila.toString());
+                            write("o senha prefencial é: " + fila.poll());
+                            write(filaP.toString());
                             aux--;
                         } else {
-                            write("o senha prefencial é: " + filaP.poll());
+                            write("o senha comum é: " + fila.poll());
+                            write(fila.toString());
                             aux = 2;
                         }
                     }
